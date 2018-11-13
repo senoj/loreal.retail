@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+// Normalize.scss
+@import '~normalize-css/normalize.css';
+
+// Leaflet CSS
+@import '~leaflet/dist/leaflet.css';
+@import '~leaflet.markercluster/dist/MarkerCluster.css';
+@import '~leaflet.markercluster/dist/MarkerCluster.Default.css';
+@import '~leaflet.awesome-markers/dist/leaflet.awesome-markers.css';
+
+// Awesome Font
+@import '~font-awesome/scss/font-awesome';
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+
+// Windyty customization
+
+#windy { 
+ height: 696px;
+}
+
+#windy #logo-wrapper {
+	top: initial;
+	bottom: 13%;
+}
+
+#windy #logo-wrapper #logo {
+	left: 5%;
+}
+
+#windy #bottom {
+	display: none !important;
+	width: 90%;
+	left: 8%;
+	bottom: 5%;
+}
+
+// leaflet.awesome-markers icon size
+.awesome-marker i {
+  font-size: 20px;
+}
+
+// Custom Leaflet
+
+.cluster-marker {
+  background-clip: padding-box;
+  border-radius: 50%; 
+}
+
+.cluster-marker div {
+  text-align: center;
+  border-radius: 10px;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif; 
+}
+
+.cluster-marker span {
+  line-height: 20px;
+}
+
+.cluster-gre {
+   background-color: rgba(103, 179, 70, 0.6);
+}
+
+.cluster-yel {
+  background-color: rgba(242, 162, 0, 0.6);
+}
+
+.cluster-red {
+  background-color: rgba(230, 77, 46, 0.6);
+}
+
+.cluster-small div {
+  margin-top: 5px !important;
+}
+
+.cluster-medium div {
+  margin-top: 12px !important;
+}
+
+.cluster-large div {
+  margin-top: 23px !important;
+}
+
+
+
